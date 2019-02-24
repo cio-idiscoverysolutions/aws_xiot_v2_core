@@ -31,6 +31,6 @@ view: xiot_stats_current {
 
   measure: sum {
     type: sum
-    sql: ${TABLE}.StatSource ;;
+    sql: ${TABLE}.Count ;;
   }
 }
