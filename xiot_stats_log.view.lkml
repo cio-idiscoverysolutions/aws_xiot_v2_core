@@ -33,4 +33,9 @@ view: xiot_stats_current {
     type: sum
     sql: ${TABLE}.Count ;;
   }
+
+  measure: count_distinct_projects {
+    type: count_distinct
+    sql: ${TABLE}.ProjectID ;;
+  }
 }
