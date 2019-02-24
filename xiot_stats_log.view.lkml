@@ -28,4 +28,9 @@ view: xiot_stats_current {
     type: count
     drill_fields: []
   }
+
+  measure: sum {
+    type: sum
+    sql: ${TABLE}.StatSource ;;
+  }
 }
