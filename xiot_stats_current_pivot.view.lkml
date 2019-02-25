@@ -47,7 +47,7 @@ view: xiot_stats_current_pivot {
   }
 
   dimension: License {
-    type: number
+    type: string
     sql: ${TABLE}.License ;;
   }
   dimension: udf_streams {
