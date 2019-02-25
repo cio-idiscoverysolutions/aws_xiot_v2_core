@@ -46,6 +46,10 @@ view: xiot_stats_current_pivot {
     sql: ${TABLE}."UDF Size (MBs)" ;;
   }
 
+  dimension: License {
+    type: number
+    sql: ${TABLE}.License ;;
+  }
   dimension: udf_streams {
     type: number
     sql: ${TABLE}."UDF Streams" ;;
