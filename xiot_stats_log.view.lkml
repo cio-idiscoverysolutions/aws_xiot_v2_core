@@ -23,7 +23,10 @@ view: xiot_stats_current {
     type: string
     sql: ${TABLE}.StatSource ;;
   }
-
+  dimension: MatterType {
+    type: string
+    sql: ${TABLE}.MatterType ;;
+  }
   measure: record_count {
     type: count
     drill_fields: []
