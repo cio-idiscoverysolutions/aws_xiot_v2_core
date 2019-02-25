@@ -54,18 +54,9 @@ view: xiot_stats_current_pivot {
     type: number
     sql: ${TABLE}."UDF Streams" ;;
   }
-  dimension_group: Project_Created {
-    type: time
-    timeframes: [
-      raw,
-      time,
-      date,
-      week,
-      month,
-      quarter,
-      year
-    ]
-    sql: ${TABLE}.DT_STATS_UPDATED ;;
+  dimension: LifeOfMatter {
+    type: number
+    sql: ${TABLE}.LifeOfMatter ;;
   }
 
   measure: count {
