@@ -12,3 +12,4 @@ persist_with: aws_xiot_v2_core_default_datagroup
 
 explore: xiot_stats_current {}
 explore: xiot_stats_current_pivot {}
+explore: xiot_stats_overall_pivot {}
