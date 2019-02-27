@@ -81,9 +81,47 @@ view: xiot_stats_overall_pivot {
     drill_fields: []
   }
 
+  measure: sum_udf_size_mbs {
+    type: sum
+    sql: ${udf_size_mbs} ;;
+  }
+
+  measure: sum_udf_streams {
+    type: sum
+    sql: ${udf_streams} ;;
+  }
+
   measure: sum_udf_record_count {
     type: sum
     sql: ${udf_records_count} ;;
   }
+
+  measure: sum_cdf_size_mbs {
+
+    type: sum
+    sql: ${cdf_size_mbs} ;;
+  }
+
+  measure: sum_cdf_streams {
+    type: sum
+    sql: ${cdf_streams} ;;
+  }
+
+  measure: sum_cdf_record_count {
+    type: sum
+    sql: ${cdf_records_count} ;;
+  }
+
+  measure: sum_rdf_file_count {
+    type: sum
+    sql: ${rdf_file_count} ;;
+  }
+
+  measure: sum_rdf_size_mbs {
+    type: sum
+    sql: ${rdf_size_mbs} ;;
+  }
+
+
 
 }
