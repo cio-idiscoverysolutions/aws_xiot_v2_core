@@ -83,7 +83,7 @@ view: xiot_stats_overall_pivot {
 
   measure: sum_udf_record_count {
     type: sum
-    sql: ${TABLE}.udf_records_count ;;
+    sql: ${udf_records_count} ;;
   }
 
 }
